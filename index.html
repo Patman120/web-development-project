@@ -53,7 +53,18 @@
    footer p
    {
     font-size: 15px;
+    text-align: center;
+    
+    
+
+
+    
    }
+   table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  
+}
    
 
   
@@ -86,7 +97,8 @@
           /* text alignment set to center */
         text-align: center;
          /* heading 3 background color set to a shade of white */
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(255, 253, 255);
+        font-size: 30px;
          
        }
        /* indicating that this is a class */
@@ -133,7 +145,7 @@
        } 
 
         
-
+     
         
 
   
@@ -146,29 +158,20 @@
 
   
       /* set my paragraph font to 25px */
-      font-size: 25px;  
+      font-size: 30px;  
 
   
       /* set my paragraph color to white */
-      Color: rgb(238, 238, 238);  
-
-     
-
-  
-
-  
-
-        
-
-  
-
+      Color: rgb(255, 255, 255)
+      
        
 
-  
-
       }  
+     
+      
 
-  
+
+ 
   
   Tr,th,td {  
 
@@ -193,7 +196,7 @@
     /* background color of my table set to pink */
    Background-color: pink;  
    
-  
+   
   
    
 
@@ -218,13 +221,13 @@
 <nav class="navbar">
 <ul> 
 <!--nav bar home-->
-<li><a href="">Home</a></li> 
+<li><a href="index.html">Home</a></li> 
   <!--nav bar About-->
-  <li><a href="">About</a></li> 
+  <li><a href="about.html">About</a></li> 
   <!--nav bar Contact-->
-  <li><a href="">Contact</a></li> 
+  <li><a href="Contact.html">Contact</a></li> 
 
-  </ul 
+</ul>
   
 
    
@@ -233,27 +236,34 @@
    
  
    <!--heading 2-->
-  <h2>Some things about me.</h2>
+  <h2> Things about me.</h2>
    <!--demo javascript-->
   <p id="demo"> Learn a little about me.</p>
    <!--clickable button that changes message -->
-  <button type="button" onclick="myFunction()">click it</button>
+  <button type="button" onclick="myFunction()">Click this button to learn about me and my characteristics</button>
   <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "Brief information below.";
+ document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
 }
+
+
 </script>
 <!--Some information about me -->
 <p> My name is Patrick Oloruntoba, and I was raised in Georgia, when I was younger I used to play soccer with my family. Things that I love to do outside of school is hanging with friends and play video games, which really helped my communication skills in making friends. I am in my 2nd year at Kennesaw State University, in which I am pursuing a bachelors degree in information technology.
 </p>  
 
 
-<h3>Charcteristics/ favorite things i like. </h3>
+<h3>Charcteristics/ favorite things I like. </h3>
 <!--centering my table-->
-<table border= "1"align ="center"> 
+
   
   <!--inidcating table style setting it to 89%-->
-  <table style ="width:89%">
+  <table class ="center">
+    <table style="width: 100%;"
+ 
    <tr>  
      <!-- listing characteristics and favorite things-->
      <th>Characteristics</th>  
